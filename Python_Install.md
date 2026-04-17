@@ -1,1 +1,2 @@
-# Step for Python Install
+# Steps for Python Install
+## Linux 
