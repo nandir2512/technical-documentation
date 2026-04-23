@@ -3,6 +3,7 @@
 
 
 
+
 # Create Python virtual environments
 ## Using `UV`
 
@@ -33,4 +34,9 @@
 Other important command 
 
     $ conda info --envs
-    
+
+## Related to PIP command
+    Bypass the cache with --no-cache-dir
+        `pip install --no-cache-dir -r requirements.txt`
+    Also force reinstall:
+        `pip install --no-cache-dir --force-reinstall -r requirements.txt`
