@@ -64,7 +64,13 @@ git push -u origin main
 (Make sure to replace YOUR_USERNAME and YOUR_REPOSITORY_NAME with your actual info).
 
 
+# Remove filt from Gitlab and Untrack
+```
+git rm --cached inference_temp.py
 
+git commit -m "Remove inference_temp.py from tracking"
+git push
+```
 
 
 
