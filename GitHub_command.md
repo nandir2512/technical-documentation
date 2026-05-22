@@ -71,10 +71,15 @@ git rm --cached inference_temp.py
 git commit -m "Remove inference_temp.py from tracking"
 git push
 ```
-
-
-
-
+# Pull latest code without push local change in gitlab.
+```
+Step 1: Reset tracked files
+  git reset --hard HEAD
+Step 2: Remove untracked files (important)
+  git clean -fd
+Step 3: Pull latest code
+  git pull origin main    # or dev
+```
 
 
 
