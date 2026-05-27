@@ -80,9 +80,16 @@ Step 2: Remove untracked files (important)
 Step 3: Pull latest code
   git pull origin main    # or dev
 ```
+# Clone Specific Git Branch
 
+Cloning only one branch If you want to save bandwidth and disk space by fetching only the specified branch, add `--single-branch`:
 
+  ``` git clone -b develop --single-branch https://github.com/user/project.git ```
 
+This clones the repository and checks out the feature-login branch immediately.
+Cloning with all branches Using only -b <branch> will still fetch all branches from the remote, but your working directory will be set to the specified branch:
+
+  ``` git clone -b develop https://github.com/user/project.git ```
 
 
 
