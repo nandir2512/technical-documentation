@@ -28,8 +28,8 @@ If that gives error, use:
   Run: ```pbcopy < ~/.ssh/id_ed25519.pub```
 
 > ### Step 5: Add Key to GitHub
-  1. Go to Github setting page
-  2. Then: Click New SSH Key
+  1. Click on your profile picture in the top-right corner and select "Settings".
+  2. In the left sidebar, click on "SSH and GPG keys".
   3. Title: <MacBook>
   4. Paste the copied key
   5. Click Add SSH Key
