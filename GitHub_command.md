@@ -66,11 +66,15 @@ git push -u origin main
 
 # Remove filt from Gitlab and Untrack
 ```
-git rm --cached inference_temp.py
+File:
+  git rm --cached <file_name>
+Directory:
+  git rm -r --cached <directory_name>
 
-git commit -m "Remove inference_temp.py from tracking"
-git push
+git commit -m "Remove tracked files and add to gitignore"
+git push origin <branch-name>
 ```
+
 # Pull latest code without push local change in gitlab.
 ```
 Step 1: Reset tracked files
