@@ -95,8 +95,32 @@ Cloning with all branches Using only -b <branch> will still fetch all branches f
 
   ``` git clone -b develop https://github.com/user/project.git ```
 
+# Add another remote
+```
+Check current remotes:
+  git remote -v
+    You may see: origin  git@gitlab.com:account1/project.git
+Add the second GitLab repository as another remote:
+  git remote add gitlab2 git@gitlab.com:account2/project.git
+    If using HTTPS
+  git remote add gitlab2 https://gitlab.com/account2/project.git
+Verify:
+  git remote -v
+Push to the second account:
+  git push gitlab2 main
+If show error
+  Push local main to a brand-new remote branch (use a unique name):
+    git push deploy_git main:rahul-test
 
 
+See remote branches:
+  git ls-remote --heads gitlab2
 
-
+Delete a local branch
+  git branch -d branch-name
+Delete a remote branch in GitLab
+  git push deploy_git --delete branch-name
   
+To see exactly how your current repository is configured, run:
+  git remote -v
+  git branch --show-current
