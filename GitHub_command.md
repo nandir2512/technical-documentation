@@ -97,6 +97,11 @@ git commit -m "Initial commit"
 git push -u origin my-new-branch
 ```
 
+# If the branch already exists on GitLab and you want to overwrite it with your local code:
+```
+git push -u origin my-new-branch --force
+```
+
 # Clone Specific Git Branch
 
 Cloning only one branch If you want to save bandwidth and disk space by fetching only the specified branch, add `--single-branch`:
