@@ -84,6 +84,19 @@ Step 2: Remove untracked files (important)
 Step 3: Pull latest code
   git pull origin main    # or dev
 ```
+# Ceate a new branch from your current local state and push it to GitLab
+```
+# Create and switch to a new branch
+git checkout -b my-new-branch
+
+# Add and commit changes
+git add .
+git commit -m "Initial commit"
+
+# Push the new branch to GitLab
+git push -u origin my-new-branch
+```
+
 # Clone Specific Git Branch
 
 Cloning only one branch If you want to save bandwidth and disk space by fetching only the specified branch, add `--single-branch`:
