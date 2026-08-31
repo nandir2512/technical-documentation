@@ -35,6 +35,12 @@ Other important command
 
     $ conda info --envs
 
+## Using Python (Windows)
+```
+$ python3 -m venv <name>
+$ ./<name>/bin/activate
+$ pip install -r requirements.txt
+```
 ## Related to PIP command
     Bypass the cache with --no-cache-dir
         `pip install --no-cache-dir -r requirements.txt`
