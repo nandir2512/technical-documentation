@@ -57,3 +57,8 @@ Why Redis Stack is Required for AI & RAG
     root@6a66365ca3a0:/# redis-cli     
     127.0.0.1:6379> 
 ```
+
+### Getting Started with Redis Iris
+
+https://redis.io/tutorials/getting-started-with-redis-iris/
+
