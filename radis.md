@@ -21,3 +21,13 @@ OK
 127.0.0.1:6379> get test
 "Hello Docker"
 127.0.0.1:6379> exit
+
+
+
+| Feature | redis:latest (Standard) | redis/redis-stack:latest (Stack) |
+| -------- | -------- | -------- |
+| Purpose  | Pure caching & basic data structures. | Complex modern application development. |
+| Footprint  | Extremely lightweight, low memory usage.  | Heavier image due to preloaded extensions. |
+| Core | Structures	Strings, Hashes, Lists, Sets, Streams. | All standard structures + extensions.
+| Full-Text & Index Search | ❌ No (limited to simple key lookups). | Yes (RediSearch / Vector Search).
+
