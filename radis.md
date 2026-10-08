@@ -31,3 +31,13 @@ OK
 | Core | Structures	Strings, Hashes, Lists, Sets, Streams. | All standard structures + extensions.
 | Full-Text & Index Search | ❌ No (limited to simple key lookups). | Yes (RediSearch / Vector Search).
 
+
+Why Redis Stack is Required for AI & RAG
+
+1. **Native Vector Search (Vector Database): **
+  To build a RAG system, you must convert text (like PDF documents or website data) into mathematical arrays called embeddings (vectors). Redis Stack includes the RediSearch engine, which allows it to act as a high-performance Vector Database. It supports algorithms like HNSW and FLAT to perform KNN (K-Nearest Neighbor) semantic search instantly.
+2. **Context & Chat History Management: **
+  AI agents require strict memory management. Redis Stack allows you to store entire user session histories as structured JSON using RedisJSON, while simultaneously indexing them for quick semantic retrieval.
+3. **Hybrid Search Capabilities: **
+  With Redis Stack, you can combine semantic vector searches with traditional full-text keyword filters (e.g., searching for "find documents about tax compliance and filter only for files created in 2026"). Standard Redis cannot do this.
+
