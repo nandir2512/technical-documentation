@@ -41,3 +41,19 @@ Why Redis Stack is Required for AI & RAG
 3. **Hybrid Search Capabilities: **
   With Redis Stack, you can combine semantic vector searches with traditional full-text keyword filters (e.g., searching for "find documents about tax compliance and filter only for files created in 2026"). Standard Redis cannot do this.
 
+
+### 4. 2. Run the Redis Stack Container
+``` docker run -d --name my-redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest ```
+
+
+### 5. Verify the Container is Running
+``` docker ps ```
+
+### 3. Connect to Redis via CLI 
+```
+    rahulnandi@Rahuls-MacBook-Air ~ %  docker exec -it <CONTAINER ID> bash 
+    root@6a66365ca3a0:/# redis-cli ping
+    PONG
+    root@6a66365ca3a0:/# redis-cli     
+    127.0.0.1:6379> 
+```
