@@ -63,6 +63,18 @@ git push -u origin main
 ```
 (Make sure to replace YOUR_USERNAME and YOUR_REPOSITORY_NAME with your actual info).
 
+### If you face below issue
+```
+rahuln@Mac RAG_using_Redis % git push -u origin main                                    
+To github.com:nandir2512/RAG_Using_Redis.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:nandir2512/RAG_Using_Redis.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+rahuln@Mac RAG_using_Redis % git pull origin main --rebase
+```
 
 # Remove filt from Gitlab and Untrack
 ```
